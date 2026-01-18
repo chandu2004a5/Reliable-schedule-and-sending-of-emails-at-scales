@@ -1,0 +1,124 @@
+nohup: ignoring input
+postgres uses an image, skipping
+redis uses an image, skipping
+Building backend
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 909B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:20-alpine
+#2 DONE 1.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [base 1/1] FROM docker.io/library/node:20-alpine@sha256:3960ed74dfe320a67bf8da9555b6bade25ebda2b22b6081d2f60fd7d5d430e9c
+#4 resolve docker.io/library/node:20-alpine@sha256:3960ed74dfe320a67bf8da9555b6bade25ebda2b22b6081d2f60fd7d5d430e9c done
+#4 sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 0B / 42.78MB 0.1s
+#4 sha256:3dcec91425079e7b455efc5f2a18d026450c47c9382c41897620afc6b1424e44 0B / 1.26MB 0.1s
+#4 sha256:41b3afaea3b1b1ab04a268431e10dcace7883019a5da7d326aa35dc9713fcbb5 0B / 445B 0.1s
+#4 sha256:3960ed74dfe320a67bf8da9555b6bade25ebda2b22b6081d2f60fd7d5d430e9c 7.67kB / 7.67kB done
+#4 sha256:2dd4425a1528b0c47e065c88b3d4b73830c8fe68132726cd8485453059774468 1.72kB / 1.72kB done
+#4 sha256:1b3a22d17cb67849eb8a0f8c775b3287b6d8616f1f41ad227658ff6d0c8167c3 6.52kB / 6.52kB done
+#4 ...
+
+#5 [internal] load build context
+#5 transferring context: 609.83kB 0.2s done
+#5 DONE 0.2s
+
+#4 [base 1/1] FROM docker.io/library/node:20-alpine@sha256:3960ed74dfe320a67bf8da9555b6bade25ebda2b22b6081d2f60fd7d5d430e9c
+#4 sha256:3dcec91425079e7b455efc5f2a18d026450c47c9382c41897620afc6b1424e44 1.26MB / 1.26MB 2.0s done
+#4 sha256:41b3afaea3b1b1ab04a268431e10dcace7883019a5da7d326aa35dc9713fcbb5 445B / 445B 2.5s done
+#4 sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 3.15MB / 42.78MB 3.0s
+#4 sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 6.29MB / 42.78MB 3.6s
+#4 sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 9.44MB / 42.78MB 4.1s
+#4 sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 12.58MB / 42.78MB 4.6s
+#4 sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 15.73MB / 42.78MB 5.2s
+#4 sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 18.87MB / 42.78MB 5.6s
+#4 sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 23.07MB / 42.78MB 6.2s
+#4 sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 26.21MB / 42.78MB 6.7s
+#4 sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 30.41MB / 42.78MB 7.3s
+#4 sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 33.55MB / 42.78MB 7.8s
+#4 sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 36.70MB / 42.78MB 8.3s
+#4 sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 39.85MB / 42.78MB 8.8s
+#4 sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 42.78MB / 42.78MB 9.2s
+#4 sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 42.78MB / 42.78MB 9.2s done
+#4 extracting sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 0.1s
+#4 extracting sha256:c2b4197efb6ccd7f8b482ae7800f1c9c78c044ea192587887300080bcff6b2c9 0.8s done
+#4 extracting sha256:3dcec91425079e7b455efc5f2a18d026450c47c9382c41897620afc6b1424e44 0.0s done
+#4 extracting sha256:41b3afaea3b1b1ab04a268431e10dcace7883019a5da7d326aa35dc9713fcbb5 done
+#4 DONE 10.1s
+
+#6 [builder 1/5] WORKDIR /app
+#6 DONE 0.1s
+
+#7 [runner 2/7] RUN addgroup --system --gid 1001 nodejs
+#7 DONE 0.1s
+
+#8 [deps 1/4] RUN apk add --no-cache libc6-compat
+#8 ...
+
+#9 [runner 3/7] RUN adduser --system --uid 1001 appuser
+#9 DONE 0.1s
+
+#8 [deps 1/4] RUN apk add --no-cache libc6-compat
+#8 2.116 (1/3) Installing musl-obstack (1.2.3-r2)
+#8 2.178 (2/3) Installing libucontext (1.3.3-r0)
+#8 2.233 (3/3) Installing gcompat (1.1.0-r4)
+#8 2.303 OK: 11.0 MiB in 21 packages
+#8 DONE 2.3s
+
+#10 [deps 2/4] WORKDIR /app
+#10 DONE 0.0s
+
+#11 [deps 3/4] COPY package.json package-lock.json* ./
+#11 DONE 0.0s
+
+#12 [deps 4/4] RUN npm ci
+#12 411.7 
+#12 411.7 added 207 packages, and audited 208 packages in 7m
+#12 411.7 
+#12 411.7 24 packages are looking for funding
+#12 411.7   run `npm fund` for details
+#12 411.7 
+#12 411.7 found 0 vulnerabilities
+#12 411.7 npm notice
+#12 411.7 npm notice New major version of npm available! 10.8.2 -> 11.7.0
+#12 411.7 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.7.0
+#12 411.7 npm notice To update run: npm install -g npm@11.7.0
+#12 411.7 npm notice
+#12 DONE 411.7s
+
+#13 [builder 2/5] COPY --from=deps /app/node_modules ./node_modules
+#13 DONE 0.4s
+
+#14 [builder 3/5] COPY . .
+#14 DONE 1.4s
+
+#15 [builder 4/5] RUN npx prisma generate
+#15 0.685 prisma:warn Prisma failed to detect the libssl/openssl version to use, and may not work as expected. Defaulting to "openssl-1.1.x".
+#15 0.685 Please manually install OpenSSL and try installing Prisma again.
+#15 25.76 Error: request to https://binaries.prisma.sh/all_commits/605197351a3c8bdd595af2d2a9bc3025bca48ea2/linux-musl/libquery_engine.so.node.gz.sha256 failed, reason: getaddrinfo EAI_AGAIN binaries.prisma.sh
+#15 ERROR: process "/bin/sh -c npx prisma generate" did not complete successfully: exit code: 1
+------
+ > [builder 4/5] RUN npx prisma generate:
+0.685 prisma:warn Prisma failed to detect the libssl/openssl version to use, and may not work as expected. Defaulting to "openssl-1.1.x".
+0.685 Please manually install OpenSSL and try installing Prisma again.
+25.76 Error: request to https://binaries.prisma.sh/all_commits/605197351a3c8bdd595af2d2a9bc3025bca48ea2/linux-musl/libquery_engine.so.node.gz.sha256 failed, reason: getaddrinfo EAI_AGAIN binaries.prisma.sh
+------
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 28)
+Dockerfile:19
+--------------------
+  17 |     
+  18 |     # Generate Prisma Client
+  19 | >>> RUN npx prisma generate
+  20 |     
+  21 |     # Build TypeScript
+--------------------
+ERROR: failed to solve: process "/bin/sh -c npx prisma generate" did not complete successfully: exit code: 1
+Service 'backend' failed to build : Build failed
