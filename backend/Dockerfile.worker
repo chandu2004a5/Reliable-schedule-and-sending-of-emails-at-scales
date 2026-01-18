@@ -1,0 +1,24 @@
+# Backend Worker Dockerfile
+FROM node:20-alpine AS base
+
+# Install OpenSSL and libc6-compat (Crucial for Prisma on Alpine)
+RUN apk add --no-cache libc6-compat openssl
+
+WORKDIR /app
+
+# Copy package files first (to cache layers)
+COPY package.json package-lock.json* ./
+RUN npm install
+
+# Copy the rest of the code
+COPY . .
+
+# Generate Prisma Client
+RUN npx prisma generate
+
+# Build TypeScript
+RUN npm run build
+
+ENV NODE_ENV=production
+
+CMD ["npm", "run", "worker:prod"]
